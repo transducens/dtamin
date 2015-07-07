@@ -1,4 +1,0 @@
-To compile just type Make
-To learn about usage type adt2min -h
-To test the code type ./debug.sh N M
-[N= # of trees to build initital DTA, e.g. 80; M = # of trees to add, e.g., 10 ]
