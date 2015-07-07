@@ -1,5 +1,5 @@
 # dtamin
-DTA minimization
+``DTA minimization
 
 A frontier-to-root deterministic finite-state tree automaton
 (DTA) can be used as a compact data structure to store collections of
@@ -11,7 +11,7 @@ the published literature. Here, we fully describe a simple implementation
 of the standard minimization algorithm that needs a time in O(|A|^2),
 with |A| being the size of the DTA.
 
-Reference: 	Rafael C. Carrasco, Jan Daciuk, Mikel L. Forcada:
+Reference: Rafael C. Carrasco, Jan Daciuk, Mikel L. Forcada:
 An Implementation of Deterministic Tree Automata Minimization. CIAA 2007: 122-129
 
 
@@ -34,3 +34,11 @@ time ./adt2min < large_sample.xml > large_dta
 ./adt2min < small_sample.xml > small_dta
 tail -$2 large_sample.xml | ./adt2min small_dta > incremental_dta
 ```
+
+
+Copyright (C) 2013 Universidad de Alicante
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or (at
+your option) any later version.
