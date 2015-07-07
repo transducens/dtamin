@@ -1,5 +1,6 @@
 adt2min 
-Partition.o 
-pre.C 
-xml.C 
-xml
+*.o 
+ptb2xml/pre.C
+ptb2xml/xml.C
+ptb2xml/xml
+**~
