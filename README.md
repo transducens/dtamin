@@ -21,17 +21,16 @@ To learn about usage type adt2min -h
 
 To test the code type ./debug.sh N M
 
-[
-  N= # of trees to build initital DTA, e.g. 80; 
-  M = # of trees to add, e.g., 10 
-]
+* N= # of trees to build initital DTA, e.g. 80; 
+* M = # of trees to add, e.g., 10 
+
 
 
 Sample script to test the incremental construction:
-
+```
 head -`expr $1 + $2` xmldata.xml > large_sample.xml
 head -$1 xmldata.xml > small_sample.xml
 time ./adt2min < large_sample.xml > large_dta
 ./adt2min < small_sample.xml > small_dta
 tail -$2 large_sample.xml | ./adt2min small_dta > incremental_dta
-
+```
